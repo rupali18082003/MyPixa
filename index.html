@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>myPixa</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/jpg" href="https://t4.ftcdn.net/jpg/02/95/20/59/360_F_295205949_FWxlt0pYPtGYZVN2lTHOVnfvc1HBjJNp.jpg">
+
+	<!-- <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script> -->
+</head>
+
+<body>
+	<div class="name">
+		<h1 class="heading">
+			MyPixa
+		</h1>
+	</div>
+
+	<section class="main">
+	 <form>
+	 	<label for="brt">Brightness</label>
+	 	<input type="range" min="0" max="300" value="100" id="brt">
+
+	 	<label for="blr">Blur</label>
+	 	<input type="range" min="0" max="10" value="0" id="blr">
+
+	 	<label for="con">Contrast</label>
+	 	<input type="range" min="0" max="300" value="100" id="con">
+
+	 	<label for="sat">Saturation</label>
+	 	<input type="range" min="0" max="300" value="100" id="sat">
+
+	 	<label for="sep">Sepia</label>
+	 	<input type="range" min="0" max="200" value="0" id="sep">
+
+	 	<label for="shd">Shadow</label>
+	 	<input type="range" min="0" max="100" value="0" id="shd">
+
+	 	<label for="hue">Hue</label>
+	 	<input type="range" min="0" max="300" value="0" id="hue">
+
+	 	<label for="inv">Invert</label>
+	 	<input type="range" min="0" max="200" value="0" id="inv">
+
+	 	<label for="opc">Opacity</label>
+	 	<input type="range" min="30" max="100" value="100" id="opc">
+
+	 	<!-- <label for="rot">Rotate</label>
+	 	<input type="range" min="0" max="200" value="0" id="rot"> -->
+
+	 </form>
+	 <div class="img">
+		<img src="img.jpg" id="yourImg">
+		<div class="btns">
+			<a href="img.jpg" id="save" download="MyPixa"><button class="btn btn1">Save</button></a>
+			<input type="text" id="file" placeholder="Enter file path">
+			<button class="btn btn2">Upload</button>
+		</div>
+	</div>
+	</section>
+
+	<script src="script.js"></script>
+</body>
+</html>
